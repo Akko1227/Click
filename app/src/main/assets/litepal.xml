@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="mydb"></dbname><!--<dbname>用于设定数据库的名字-->
+    <version value="1" ></version><!--<version>用于设定数据库的版本号-->
+    <list>
+        <mapping class="com.example.xutin_000.finalexam.MyGame"></mapping>
+    </list>
+</litepal><!--<list>用于设定所有的映射模型-->
+
+<!--    很方便的快捷键
+        XML 注释：CTRL + SHIFT + /
+        撤销注释：CTRL + SHIFT + \
+-->
