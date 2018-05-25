@@ -1,4 +1,10 @@
 # Click
+------------------------------------------------------------
+new function:change the skin<br>
+新功能：更改皮肤（人物形象）。<br>
+add a new skin:skin2<br>
+增加一个新皮肤（人物形象）:皮肤2<br>
+------------------------------------------------------------
 A simple game<br>
 一个简单的游戏<br><br>
 Player input their name, start the game, and click the comic picture.After ten seconds, the game over and the score will be showed.Player can save their score.<br>
