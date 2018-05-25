@@ -5,10 +5,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import com.example.xutin_000.finalexam.MyDataClass;
 
 public class ShopActivity extends AppCompatActivity {
     private MyDatabaseHelper dbHelper;
@@ -55,7 +57,24 @@ public class ShopActivity extends AppCompatActivity {
             }
 
         });
-
+        //设置皮肤1
+        Button button9 = (Button) findViewById(R.id.button9);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyDataClass.skinid=1;
+                Toast.makeText(ShopActivity.this, "皮肤1设置成功！", Toast.LENGTH_SHORT).show();
+            }
+        });
+        //设置皮肤2
+        Button button10 = (Button) findViewById(R.id.button10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyDataClass.skinid=2;
+                Toast.makeText(ShopActivity.this, "皮肤2设置成功！", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 }

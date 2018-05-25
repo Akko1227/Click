@@ -20,6 +20,7 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 //倒计时
+import com.example.xutin_000.finalexam.MyDataClass;
 
 public class MainActivity extends AppCompatActivity {
     TextView tv;
@@ -39,7 +40,18 @@ private ImageView iv1;
         tv = (TextView) this.findViewById(R.id.tv);//tv显示当前按键次数=成绩score
         tv2= (TextView) this.findViewById(R.id.tv2);//tv2显示玩家名
         iv1 = (ImageView) findViewById(R.id.imageView2);
-
+        //设置游戏入场图片
+        switch(MyDataClass.skinid){
+            case 1:
+                iv1.setImageResource(R.drawable.akko_3);
+                break;
+            case 2:
+                iv1.setImageResource(R.drawable.cha1);
+                break;
+            default:
+                iv1.setImageResource(R.drawable.akko_3);
+                break;
+        }
 
 
         //    mname=getIntent().getStringExtra("string_data");
@@ -59,8 +71,19 @@ private ImageView iv1;
                 if(tempa%2==0) {
                     switch (v.getId()) {
                         case R.id.button:
-                            iv1.setImageResource(R.drawable.akko_4);
-                            break;
+                            //switch-case语句增加修改皮肤功能
+                            switch(MyDataClass.skinid){
+                                case 1:
+                                    iv1.setImageResource(R.drawable.akko_4);
+                                    break;
+                                case 2:
+                                    iv1.setImageResource(R.drawable.cha2);
+                                    break;
+                                default:
+                                    iv1.setImageResource(R.drawable.akko_4);
+                                    break;
+                            }
+                            //iv1.setImageResource(R.drawable.cha2);//akko_4
                         default:
                             break;
                     }
@@ -69,8 +92,18 @@ private ImageView iv1;
                 {
                     switch (v.getId()) {
                         case R.id.button:
-                            iv1.setImageResource(R.drawable.akko_3);
-                            break;
+                            //switch-case语句增加修改皮肤功能
+                            switch(MyDataClass.skinid){
+                                case 1:
+                                    iv1.setImageResource(R.drawable.akko_3);
+                                    break;
+                                case 2:
+                                    iv1.setImageResource(R.drawable.cha1);
+                                    break;
+                                default:
+                                    iv1.setImageResource(R.drawable.akko_3);
+                                    break;
+                            }
                         default:
                             break;
                     }
